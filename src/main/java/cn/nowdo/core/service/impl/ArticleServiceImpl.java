@@ -1,7 +1,7 @@
 /*
  * @(#)ArticleServiceImpl.java Aug 4, 2014
  * 
- * Copyright 2014 weipu, Inc. All rights reserved.
+ * Copyright 2014 nowdo, Inc. All rights reserved.
  */
 package cn.nowdo.core.service.impl;
 
