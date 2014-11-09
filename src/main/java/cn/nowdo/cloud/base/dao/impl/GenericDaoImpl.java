@@ -1,7 +1,7 @@
 /*
  * @(#)GenericDaoImpl.java Jun 7, 2014
  * 
- * Copyright (C) 2014 Wepu, Inc. All rights reserved.
+ * Copyright (C) 2014 nowdo, Inc. All rights reserved.
  */
 package cn.nowdo.cloud.base.dao.impl;
 

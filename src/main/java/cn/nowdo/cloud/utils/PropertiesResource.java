@@ -1,7 +1,7 @@
 /*
  * @(#)PropertiesResource Jun 14, 2014
  * 
- * Copyright (c) 2014 Wepu, Inc. All rights reserved.
+ * Copyright (c) 2014 nowdo, Inc. All rights reserved.
  */
 package cn.nowdo.cloud.utils;
 

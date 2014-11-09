@@ -1,7 +1,7 @@
 /*
  * @(#)PropertiesConfigurationEntity 2014年9月2日
  * 
- * Copyright (c) 2014 Wepu, Inc. All rights reserved.
+ * Copyright (c) 2014 nowdo, Inc. All rights reserved.
  */
 package cn.nowdo.cloud.base.entity;
 
