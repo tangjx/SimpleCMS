@@ -5,6 +5,8 @@
  */
 package cn.nowdo.core.action;
 
+
+import org.apache.log4j.Logger;
 import org.apache.struts2.convention.annotation.Action;
 import org.apache.struts2.convention.annotation.Namespace;
 import org.apache.struts2.convention.annotation.ParentPackage;
@@ -23,10 +25,11 @@ import cn.nowdo.cloud.base.action.BaseAction;
 @Namespace("/article")
 public class ArticleAction extends BaseAction{
 	private static final long serialVersionUID = 1L;
+	private Logger logger = Logger.getLogger(ArticleAction.class);
 	
 	@Action(value = "test")
 	public String test() {
-		System.out.print("dddddd");
+		logger.info("ArticleAction, dddddd");
 		return NONE;
 	}
 
