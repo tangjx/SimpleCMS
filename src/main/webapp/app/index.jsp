@@ -5,99 +5,63 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <%@ include file="common/common-res.jsp"%>
-<title>所有设备</title>
+  <!--
+  <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.0/css/bootstrap-combined.min.css" rel="stylesheet">
+  -->
+  <style type='text/css'>
+    body {
+      background-color: #CCC;
+    }
+    #content {
+      background-color: #FFF;
+      border-radius: 5px;
+    }
+    #content .main {
+      padding: 20px;
+    }
+    #content .sidebar {
+      padding: 10px;
+    }
+    #content p {
+      line-height: 30px;
+    }
+  </style>
+<title>首页</title>
 </head>
 <body>
-  <div>
-    <div class="container-fluid">
-      <div class="row-fluid">
-        <div class="span12">
-          <jsp:include page="common/header.jsp"></jsp:include>
-        </div>
-      </div>
-      <div class="row-fluid">
-        <div class="span8">
-          <div class="carousel slide" id="carousel-250251">
-            <ol class="carousel-indicators">
-              <li data-slide-to="0" data-target="#carousel-250251">
-              </li>
-              <li data-slide-to="1" data-target="#carousel-250251">
-              </li>
-              <li data-slide-to="2" data-target="#carousel-250251" class="active">
-              </li>
-            </ol>
-            <div class="carousel-inner">
-              <div class="item">
-                <img alt="" src="img/1.jpg" />
-                <div class="carousel-caption">
-                  <h4>
-                    棒球
-                  </h4>
-                  <p>
-                    棒球运动是一种以棒打球为主要特点，集体性、对抗性很强的球类运动项目，在美国、日本尤为盛行。
-                  </p>
-                </div>
-              </div>
-              <div class="item">
-                <img alt="" src="img/2.jpg" />
-                <div class="carousel-caption">
-                  <h4>
-                    冲浪
-                  </h4>
-                  <p>
-                    冲浪是以海浪为动力，利用自身的高超技巧和平衡能力，搏击海浪的一项运动。运动员站立在冲浪板上，或利用腹板、跪板、充气的橡皮垫、划艇、皮艇等驾驭海浪的一项水上运动。
-                  </p>
-                </div>
-              </div>
-              <div class="item active">
-                <img alt="" src="img/3.jpg" />
-                <div class="carousel-caption">
-                  <h4>
-                    自行车
-                  </h4>
-                  <p>
-                    以自行车为工具比赛骑行速度的体育运动。1896年第一届奥林匹克运动会上被列为正式比赛项目。环法赛为最著名的世界自行车锦标赛。
-                  </p>
-                </div>
-              </div>
-            </div> <a data-slide="prev" href="#carousel-250251" class="left carousel-control">‹</a> <a data-slide="next" href="#carousel-250251" class="right carousel-control">›</a>
-          </div>
-        </div>
-        <div class="span4">
-          <ul>
-            <li>
-              新闻资讯
-            </li>
-            <li>
-              体育竞技
-            </li>
-            <li>
-              娱乐八卦
-            </li>
-            <li>
-              前沿科技
-            </li>
-            <li>
-              环球财经
-            </li>
-            <li>
-              天气预报
-            </li>
-            <li>
-              房产家居
-            </li>
-            <li>
-              网络游戏
-            </li>
+    <div class="container">
+      <h1>TWITTER BOOTSTRAP TUTORIAL</h1>
+      <div class='navbar navbar-inverse'>
+        <div class='nav-collapse' style="height: auto;">
+          <ul class="nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#">Page One</a></li>
+            <li><a href="#">Page Two</a></li>
           </ul>
         </div>
       </div>
-      <div class="row-fluid">
-        <div class="span12">
-          <jsp:include page="common/footer.jsp"></jsp:include>
+
+      <div id='content' class='row-fluid'>
+        <div class='span9 main'>
+          <h2>Main Content Section</h2>
+          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.</p>
+
+          <p>Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum.</p>
+        </div>
+        <div class='span3 sidebar'>
+          <h2>Sidebar</h2>
+          <ul class="nav nav-tabs nav-stacked">
+            <li><a href='#'>Another Link 1</a></li>
+            <li><a href='#'>Another Link 2</a></li>
+            <li><a href='#'>Another Link 3</a></li>
+          </ul>
         </div>
       </div>
+
+
+      <div class="span12">
+        <jsp:include page="common/footer.jsp"></jsp:include>
+      </div>
     </div>
-  </div>
 </body>
 </html>
