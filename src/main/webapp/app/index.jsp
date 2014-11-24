@@ -5,63 +5,56 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <%@ include file="common/common-res.jsp"%>
-  <!--
-  <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.0/css/bootstrap-combined.min.css" rel="stylesheet">
-  -->
-  <style type='text/css'>
-    body {
-      background-color: #CCC;
-    }
-    #content {
-      background-color: #FFF;
-      border-radius: 5px;
-    }
-    #content .main {
-      padding: 20px;
-    }
-    #content .sidebar {
-      padding: 10px;
-    }
-    #content p {
-      line-height: 30px;
-    }
-  </style>
+  <link href="common/css/justified-nav.css" rel="stylesheet">
 <title>首页</title>
 </head>
 <body>
-    <div class="container">
-      <h1>TWITTER BOOTSTRAP TUTORIAL</h1>
-      <div class='navbar navbar-inverse'>
-        <div class='nav-collapse' style="height: auto;">
-          <ul class="nav">
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="#">Page One</a></li>
-            <li><a href="#">Page Two</a></li>
-          </ul>
-        </div>
-      </div>
+<div class="container">
 
-      <div id='content' class='row-fluid'>
-        <div class='span9 main'>
-          <h2>Main Content Section</h2>
-          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.</p>
+  <div class="masthead">
+    <h3 class="text-muted">Project name</h3>
+    <ul class="nav nav-justified">
+      <li class="active"><a href="#">Home</a></li>
+      <li><a href="#">Projects</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Downloads</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </div>
 
-          <p>Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum.</p>
-        </div>
-        <div class='span3 sidebar'>
-          <h2>Sidebar</h2>
-          <ul class="nav nav-tabs nav-stacked">
-            <li><a href='#'>Another Link 1</a></li>
-            <li><a href='#'>Another Link 2</a></li>
-            <li><a href='#'>Another Link 3</a></li>
-          </ul>
-        </div>
-      </div>
+  <!-- Jumbotron -->
+  <div class="jumbotron">
+    <h1>Marketing stuff!</h1>
+    <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet.</p>
+    <p><a class="btn btn-lg btn-success" href="#" role="button">Get started today</a></p>
+  </div>
 
-
-      <div class="span12">
-        <jsp:include page="common/footer.jsp"></jsp:include>
-      </div>
+  <!-- Example row of columns -->
+  <div class="row">
+    <div class="col-lg-4">
+      <h2>Safari bug warning!</h2>
+      <p class="text-danger">As of v8.0, Safari exhibits a bug in which resizing your browser horizontally causes rendering errors in the justified nav that are cleared upon refreshing.</p>
+      <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+      <p><a class="btn btn-primary" href="#" role="button">View details &raquo;</a></p>
     </div>
+    <div class="col-lg-4">
+      <h2>Heading</h2>
+      <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+      <p><a class="btn btn-primary" href="#" role="button">View details &raquo;</a></p>
+    </div>
+    <div class="col-lg-4">
+      <h2>Heading</h2>
+      <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa.</p>
+      <p><a class="btn btn-primary" href="#" role="button">View details &raquo;</a></p>
+    </div>
+  </div>
+
+  <!-- Site footer -->
+  <div class="footer">
+    <p>&copy; Company 2014</p>
+  </div>
+
+</div> <!-- /container -->
 </body>
 </html>

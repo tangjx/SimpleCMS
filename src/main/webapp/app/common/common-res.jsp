@@ -8,3 +8,5 @@
       href="../../components/bootstrap/css/bootstrap.min.css" />
 <link rel="stylesheet"
       href="../../components/bootstrap/css/bootstrap-theme.min.css" />
+<link rel="stylesheet"
+      href="../../components/bootstrap/css/bootstrap-responsive.css" />
