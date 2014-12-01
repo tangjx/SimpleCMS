@@ -10,6 +10,7 @@ import java.util.List;
 import cn.nowdo.cloud.base.dao.impl.GenericDaoImpl;
 import cn.nowdo.core.dao.ArticleTemplateDao;
 import cn.nowdo.core.entity.ArticleTemplate;
+import org.springframework.stereotype.Repository;
 
 /*
  * @Title: ArticleTemplateDaoImpl.java
@@ -18,6 +19,7 @@ import cn.nowdo.core.entity.ArticleTemplate;
  * @date Oct 23, 2014 10:49:42 AM
  * @version V1.0  
  */
+@Repository
 public class ArticleTemplateDaoImpl extends
 		GenericDaoImpl<ArticleTemplate, String> implements ArticleTemplateDao {
 

@@ -5,7 +5,10 @@
  */
 package cn.nowdo.core.service.impl;
 
+import cn.nowdo.core.entity.ChannelTemplate;
 import cn.nowdo.core.service.ChannelTemplateService;
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 /*
  * @Title: ChannelTemplateServiceImpl.java
@@ -14,6 +17,27 @@ import cn.nowdo.core.service.ChannelTemplateService;
  * @date Oct 23, 2014 10:45:32 AM
  * @version V1.0  
  */
+@Service
+@Transactional
 public class ChannelTemplateServiceImpl implements ChannelTemplateService {
 
+    @Override
+    public ChannelTemplate newChannelTemplate(ChannelTemplate channelTemplate) {
+        return null;
+    }
+
+    @Override
+    public ChannelTemplate modifyChannelTemplate(ChannelTemplate channelTemplate) {
+        return null;
+    }
+
+    @Override
+    public ChannelTemplate readChannelTemplate(String channelTemplateId) {
+        return null;
+    }
+
+    @Override
+    public boolean dropChannelTemplate(String channelTemplateId) {
+        return false;
+    }
 }

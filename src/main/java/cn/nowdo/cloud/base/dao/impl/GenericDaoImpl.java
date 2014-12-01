@@ -175,4 +175,16 @@ public class GenericDaoImpl<T extends BaseEntity, PK extends Serializable> imple
         return query.list();
 	}
 
+    public long getCount(String hql, Map<String, Object> paramsMap) {
+        Query query = setQueryParams(createHqlQuery(hql), paramsMap);
+        List list = query.list();
+        return (long)list.get(0);
+    }
+
+    public long getCount(String hql, Object... paramsArray) {
+        Query query = setQueryParams(createHqlQuery(hql), paramsArray);
+        List list = query.list();
+        return (long)list.get(0);
+    }
+
 }

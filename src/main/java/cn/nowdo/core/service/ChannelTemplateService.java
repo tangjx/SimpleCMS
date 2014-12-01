@@ -5,6 +5,8 @@
  */
 package cn.nowdo.core.service;
 
+import cn.nowdo.core.entity.ChannelTemplate;
+
 /*
  * @Title: ChannelTemplateService.java
  * @Description: TODO(用一句话描述该文件做什么)
@@ -14,4 +16,31 @@ package cn.nowdo.core.service;
  */
 public interface ChannelTemplateService {
 
+    /**
+     *
+     * @param channelTemplate
+     * @return
+     */
+    public ChannelTemplate newChannelTemplate(ChannelTemplate channelTemplate);
+
+    /**
+     *
+     * @param channelTemplate
+     * @return
+     */
+    public ChannelTemplate modifyChannelTemplate(ChannelTemplate channelTemplate);
+
+    /**
+     *
+     * @param channelTemplateId
+     * @return
+     */
+    public ChannelTemplate readChannelTemplate(String channelTemplateId);
+
+    /**
+     *
+     * @param channelTemplateId
+     * @return
+     */
+    public boolean dropChannelTemplate(String channelTemplateId);
 }

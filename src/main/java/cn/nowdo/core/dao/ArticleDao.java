@@ -8,6 +8,8 @@ package cn.nowdo.core.dao;
 import cn.nowdo.cloud.base.dao.GenericDao;
 import cn.nowdo.core.entity.Article;
 
+import java.util.List;
+
 /*
  * @Title: ArticleDao.java
  * @Description: 
@@ -16,5 +18,15 @@ import cn.nowdo.core.entity.Article;
  * @version V1.0  
  */
 public interface ArticleDao extends GenericDao<Article, String> {
+
+    public List<Article> getListByChannel(String channelId);
+
+    public List<Article> getListByChannel(String channelId, int firstResult, int maxResults);
+
+    public List<Article> getListByTag(String tagId, int firstResult, int maxResults);
+
+    public long CountByChannel(String channelId);
+
+    public long CountByTag(String tagId);
 
 }

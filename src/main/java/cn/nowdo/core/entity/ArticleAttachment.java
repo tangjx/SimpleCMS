@@ -25,7 +25,7 @@ import cn.nowdo.cloud.base.entity.BaseEntity;
 public class ArticleAttachment extends BaseEntity{
 	private String name;
 	private String description;
-	private String type;
+	private int type;
 	private String url;
 	@ManyToOne(cascade = CascadeType.ALL)
 	@JoinColumn(name="articleId")
@@ -54,18 +54,23 @@ public class ArticleAttachment extends BaseEntity{
 	public void setDescription(String description) {
 		this.description = description;
 	}
-	/**
-	 * @return the type
-	 */
-	public String getType() {
+
+	public int getType() {
 		return type;
 	}
-	/**
-	 * @param type the type to set
-	 */
-	public void setType(String type) {
+
+	public void setType(int type) {
 		this.type = type;
 	}
+
+	public Article getArticle() {
+		return article;
+	}
+
+	public void setArticle(Article article) {
+		this.article = article;
+	}
+
 	/**
 	 * @return the url
 	 */

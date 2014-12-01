@@ -5,6 +5,8 @@
  */
 package cn.nowdo.core.service;
 
+import cn.nowdo.core.entity.Channel;
+
 /*
  * @Title: ChannelService.java
  * @Description: TODO(用一句话描述该文件做什么)
@@ -13,5 +15,32 @@ package cn.nowdo.core.service;
  * @version V1.0  
  */
 public interface ChannelService {
+    /**
+     *
+     * @param channel
+     * @return
+     */
+    public Channel createChannel(Channel channel);
+
+    /**
+     *
+     * @param channel
+     * @return
+     */
+    public Channel modifyChannel(Channel channel);
+
+    /**
+     *
+     * @param channelId
+     * @return
+     */
+    public boolean dropChannel(String channelId);
+
+    /**
+     *
+     * @param channelId
+     * @return
+     */
+    public Channel readChannel(String channelId);
 
 }

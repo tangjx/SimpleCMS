@@ -5,7 +5,10 @@
  */
 package cn.nowdo.core.service.impl;
 
+import cn.nowdo.core.entity.ArticleTemplate;
 import cn.nowdo.core.service.ArticleTemplateService;
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 /*
  * @Title: ArticleTemplateServiceImpl.java
@@ -14,6 +17,27 @@ import cn.nowdo.core.service.ArticleTemplateService;
  * @date Oct 23, 2014 10:44:01 AM
  * @version V1.0  
  */
+@Service
+@Transactional
 public class ArticleTemplateServiceImpl implements ArticleTemplateService {
 
+    @Override
+    public ArticleTemplate newArticleTemplate(ArticleTemplate articleTemplate) {
+        return null;
+    }
+
+    @Override
+    public boolean dropArticleTemplate(String articleTemplateId) {
+        return false;
+    }
+
+    @Override
+    public ArticleTemplate modifyArticleTemplate(ArticleTemplate articleTemplate) {
+        return null;
+    }
+
+    @Override
+    public ArticleTemplate readArticleTemplate(String articleTemplateId) {
+        return null;
+    }
 }

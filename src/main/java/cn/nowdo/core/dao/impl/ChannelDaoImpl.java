@@ -8,6 +8,7 @@ package cn.nowdo.core.dao.impl;
 import cn.nowdo.cloud.base.dao.impl.GenericDaoImpl;
 import cn.nowdo.core.dao.ChannelDao;
 import cn.nowdo.core.entity.Channel;
+import org.springframework.stereotype.Repository;
 
 /*
  * @Title: ChannelDaoImpl.java
@@ -16,6 +17,7 @@ import cn.nowdo.core.entity.Channel;
  * @date Oct 23, 2014 10:50:34 AM
  * @version V1.0  
  */
+@Repository
 public class ChannelDaoImpl extends GenericDaoImpl<Channel, String> implements ChannelDao{
 
 }

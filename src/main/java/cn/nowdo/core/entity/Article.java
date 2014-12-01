@@ -15,6 +15,7 @@ import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
 import cn.nowdo.cloud.base.entity.BaseEntity;
+import org.hibernate.annotations.Type;
 
 /*
  * @Title: Article.java
@@ -31,6 +32,7 @@ public class Article extends BaseEntity{
 	private String subTitle;
 	private String description;
 	private String meta;
+	@Type(type="text")
 	private String content;
 	private String tag;
 	@OneToMany(mappedBy = "article", cascade = CascadeType.ALL)
@@ -38,6 +40,9 @@ public class Article extends BaseEntity{
 	@OneToOne
 	@JoinColumn(name = "templateId")
 	private ArticleTemplate template;
+	@OneToOne
+	@JoinColumn(name = "channelId")
+	private Channel channel;
 	/**
 	 * @return the title
 	 */
@@ -133,5 +138,13 @@ public class Article extends BaseEntity{
 	 */
 	public void setMeta(String meta) {
 		this.meta = meta;
+	}
+
+	public Channel getChannel() {
+		return channel;
+	}
+
+	public void setChannel(Channel channel) {
+		this.channel = channel;
 	}
 }
