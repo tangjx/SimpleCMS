@@ -10,6 +10,8 @@ import cn.nowdo.core.dao.ChannelDao;
 import cn.nowdo.core.entity.Channel;
 import org.springframework.stereotype.Repository;
 
+import java.util.List;
+
 /*
  * @Title: ChannelDaoImpl.java
  * @Description: TODO(用一句话描述该文件做什么)
@@ -19,5 +21,8 @@ import org.springframework.stereotype.Repository;
  */
 @Repository
 public class ChannelDaoImpl extends GenericDaoImpl<Channel, String> implements ChannelDao{
-
+    @Override
+    public List<Channel> getChannelListByRight(String parentId) {
+        return super.find();
+    }
 }

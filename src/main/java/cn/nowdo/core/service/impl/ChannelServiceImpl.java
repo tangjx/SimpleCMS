@@ -12,6 +12,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.util.List;
+
 /*
  * @Title: ChannelServiceImpl.java
  * @Description: TODO(用一句话描述该文件做什么)
@@ -52,5 +54,10 @@ public class ChannelServiceImpl implements ChannelService {
     @Override
     public Channel readChannel(String channelId) {
         return channelDao.get(channelId);
+    }
+
+    @Override
+    public List<Channel> getChannelListByRight(String parentId) {
+        return channelDao.getChannelListByRight(parentId);
     }
 }

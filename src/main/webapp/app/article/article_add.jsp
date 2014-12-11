@@ -25,6 +25,16 @@
   <div style="width:70%;margin: auto;margin-top: 50px; ">
     <form class="form-horizontal" role="form" id="articleForm">
       <div class="form-group">
+        <label for="channelId" class="col-sm-2 control-label">栏目</label>
+        <div class="col-sm-10">
+          <select name="channelId" id="channelId">
+            <c:forEach items="${channelList}" var="channel">
+              <option value="${channel.id}">${channel.name}</option>
+            </c:forEach>
+          </select>
+        </div>
+      </div>
+      <div class="form-group">
         <label for="title" class="col-sm-2 control-label">标题</label>
         <div class="col-sm-10">
           <input type="text" class="form-control" id="title" name="title" placeholder="Text input">
@@ -84,10 +94,12 @@
       if($.trim(title) == "") {
         result = false;
         alert("请填写标题");
+        return result;
       }
       if($.trim(content) == "" || $.trim(content) == "<p><br></p>") {
         result = false;
         alert("请填写内容");
+        return result;
       }
       return result;
     }

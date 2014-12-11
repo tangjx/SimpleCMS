@@ -23,9 +23,10 @@ public class ChannelAction extends BaseAction{
     private ChannelService channelService;
 
     @Action(value = "add_channel", results = {
-            @Result (name = "SUCCESS", location = "/app/channel/add_channel.jsp")
+            @Result (name = SUCCESS, location = "/app/channel/channel_add.jsp")
     })
     public String addChannel() {
+        logger.info("this is addChannel!");
         return SUCCESS;
     }
 
@@ -33,16 +34,18 @@ public class ChannelAction extends BaseAction{
     public String addChannelSubmit() {
         String name = getRequestParameter("name");
         String description = getRequestParameter("description");
+        String meta = getRequestParameter("meta");
         Channel channel = new Channel();
         channel.setName(name);
         channel.setDescription(description);
+        channel.setMeta(meta);
         channelService.createChannel(channel);
         renderJson("success");
         return NONE;
     }
 
     @Action(value = "modify_channel", results = {
-            @Result (name = "SUCCESS", location = "/app/channel/modify_channel.jsp")
+            @Result (name = SUCCESS, location = "/app/channel/channel_modify.jsp")
     })
     public String modifyChannel() {
         String channelId = getRequestParameter("channelId");

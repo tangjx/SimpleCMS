@@ -26,6 +26,7 @@ import cn.nowdo.cloud.base.entity.BaseEntity;
 public class Channel extends BaseEntity {
 	private String name;
 	private String description;
+	private String meta;
 	@OneToOne
 	@JoinColumn(name = "templateId")
 	private ChannelTemplate template;
@@ -79,5 +80,13 @@ public class Channel extends BaseEntity {
 	 */
 	public void setParentChannel(Channel parentChannel) {
 		this.parentChannel = parentChannel;
+	}
+
+	public String getMeta() {
+		return meta;
+	}
+
+	public void setMeta(String meta) {
+		this.meta = meta;
 	}
 }

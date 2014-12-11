@@ -8,6 +8,8 @@ package cn.nowdo.core.dao;
 import cn.nowdo.cloud.base.dao.GenericDao;
 import cn.nowdo.core.entity.Channel;
 
+import java.util.List;
+
 /*
  * @Title: ChannelDao.java
  * @Description: TODO(用一句话描述该文件做什么)
@@ -16,5 +18,7 @@ import cn.nowdo.core.entity.Channel;
  * @version V1.0  
  */
 public interface ChannelDao extends GenericDao<Channel, String> {
+
+    public List<Channel> getChannelListByRight(String parentId);
 
 }

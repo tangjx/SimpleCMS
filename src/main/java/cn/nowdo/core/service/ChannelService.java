@@ -7,6 +7,8 @@ package cn.nowdo.core.service;
 
 import cn.nowdo.core.entity.Channel;
 
+import java.util.List;
+
 /*
  * @Title: ChannelService.java
  * @Description: TODO(用一句话描述该文件做什么)
@@ -42,5 +44,12 @@ public interface ChannelService {
      * @return
      */
     public Channel readChannel(String channelId);
+
+    /**
+     *
+     * @param parentId 副栏目ID
+     * @return
+     */
+    public List<Channel> getChannelListByRight(String parentId);
 
 }

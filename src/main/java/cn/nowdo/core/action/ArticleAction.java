@@ -19,6 +19,8 @@ import cn.nowdo.cloud.base.action.BaseAction;
 import org.apache.struts2.convention.annotation.Result;
 import org.springframework.beans.factory.annotation.Autowired;
 
+import java.util.List;
+
 /*
  * @Title: ArticleAction.java
  * @Description: 
@@ -47,6 +49,8 @@ public class ArticleAction extends BaseAction{
 	@Action(value = "add_article", results = {
 			@Result(name = SUCCESS, location = "/app/article/article_add.jsp")})
 	public String addArticle() {
+		List<Channel> channelList = channelService.getChannelListByRight(null);
+		setRequestAttribute("channelList", channelList);
 		return SUCCESS;
 	}
 
@@ -60,8 +64,8 @@ public class ArticleAction extends BaseAction{
 		article.setTitle(title);
 		article.setContent(content);
 		article.setDescription(description);
-//		Channel channel = channelService.readChannel(channelId);
-//		article.setChannel(channel);
+		Channel channel = channelService.readChannel(channelId);
+		article.setChannel(channel);
 		articleService.publishArticle(article);
 		renderJson("success");
 		return NONE;
