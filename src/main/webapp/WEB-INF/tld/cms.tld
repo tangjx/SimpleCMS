@@ -17,11 +17,15 @@
         <body-content>scriptless</body-content>
         <description>article list tag</description>
         <attribute>
-            <name>data</name>
+            <name>channelId</name>
             <required>true</required>
         </attribute>
         <attribute>
             <name>item</name>
+            <required>true</required>
+        </attribute>
+        <attribute>
+            <name>count</name>
             <required>true</required>
         </attribute>
     </tag>

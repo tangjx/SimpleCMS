@@ -17,8 +17,8 @@
 <body>
   <%
     class AAA {
-      public String name;
-      public String content;
+      private String name;
+      private String content;
 
       public String getName() {
         return name;
@@ -45,8 +45,8 @@
     }
     pageContext.setAttribute("list", list);
   %>
-  <cms:cms_article_list data="list" item="listItem">
-    <li>${listItem}</li>
+  <cms:cms_article_list channelId="ff8081814a48f675014a48fc62b40000" item="listItem" count="1">
+    <li>${listItem.title}</li>
   </cms:cms_article_list>
 
 </body>
